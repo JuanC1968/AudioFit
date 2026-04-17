@@ -1,0 +1,44 @@
+Prompt de Generación: App de Audiometría Web Personalizada
+Contexto y Rol:
+Actúa como un desarrollador experto en Frontend y Web Audio API. Necesito crear una aplicación web de una sola página (Single Page Application) en HTML, CSS y JavaScript para realizar una audiometría tonal básica en casa. El objetivo es obtener una tabla de decibelios por frecuencia para que el usuario pueda configurar manualmente los niveles de un audífono genérico.
+
+Tarea:
+Escribe el código completo en un único archivo HTML que incluya:
+
+Interfaz de Usuario (UI): Limpia, con botones grandes y alto contraste para personas con limitaciones visuales o motoras.
+
+Lógica de Audio: Uso de OscillatorNode y GainNode para generar tonos puros sin necesidad de archivos externos.
+
+Especificaciones Técnicas:
+
+Frecuencias a evaluar: 250Hz, 500Hz, 1000Hz, 2000Hz, 4000Hz y 8000Hz.
+
+Controles:
+
+Botones para seleccionar el oído (Izquierdo / Derecho) mediante StereoPannerNode.
+
+Un botón de "Reproducir Tono" que emita el sonido solo mientras se mantenga presionado.
+
+Un deslizador (slider) de volumen que represente la intensidad en decibelios (escala relativa de 0 a 100).
+
+Un botón de "Registrar Umbral" para guardar el nivel mínimo que el usuario alcanza a escuchar en cada frecuencia.
+
+Visualización: Una tabla final que muestre los resultados (Frecuencia vs. Nivel de Audición) para que el usuario pueda copiar los datos.
+
+Criterios de Calidad:
+
+El código debe ser autocontenido (sin librerías externas).
+
+Incluir una advertencia inicial clara indicando que esto no es una herramienta médica profesional y que se debe usar con auriculares de buena calidad a un volumen inicial bajo para evitar daños.
+
+Los tonos deben tener un pequeño "fade-in" y "fade-out" (0.1s) para evitar clics auditivos molestos al activar/desactivar el sonido.
+
+Cómo debe ser la respuesta:
+Entrega el código en un bloque de texto listo para copiar, pegar y guardar como .html. Incluye comentarios breves en el código explicando la función de la Web Audio API.
+
+Consejos adicionales para el uso de la App:
+Calibración: Como cada auricular y tarjeta de sonido es diferente, dile al usuario que primero pruebe con una persona de audición "normal" para establecer un punto de referencia (el nivel 0).
+
+Entorno: Recomienda realizar la prueba en una habitación totalmente silenciosa, ya que el ruido de fondo falseará los resultados de las frecuencias graves.
+
+Auriculares: Es indispensable usar auriculares de diadema (over-ear) o intraurales (in-ear) bien sellados; los altavoces del móvil o la laptop no sirven para esta tarea.
